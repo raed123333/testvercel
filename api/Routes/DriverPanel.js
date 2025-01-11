@@ -25,10 +25,9 @@ router.post("/", async (req, res) => {
 
 router.get('/', async (req,res)=>{
         try{
-                const drivers = await DriverModel.find({});
+               // const drivers = await DriverModel.find({});
                 return res.status(200).json({
-                        count:drivers.length,
-                        data:drivers,
+                        count:10,
                 });
         }catch(err){
                 console.error(err.message);
