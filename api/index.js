@@ -27,6 +27,7 @@ app.use("/requestrepair", RequestRepair);
 app.use("/maintenancePlan", MaintenancePlan);
 app.use("/driver", DriverPanel);
 app.use("/admin", AdminPanel);
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // MongoDB connection and server start
 mongoose.connect(mongoDBURL)
